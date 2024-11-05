@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face{
+    font-family: 'Inconsolata';
+    src: url(../font/static/Inconsolata-Regular.ttf);
+}
+body{
+    font-family: "Inconsolata", monospace;
+}
+
+a{
+    text-decoration: none;
+    font-family: "Inconsolata", monospace;
+}
+ul{
+    list-style-type: none;
+}
+.header{
+    height: 30px;
+    background-color: #242f51;
+    color: white;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header .left i{
+    padding: 0 20px;
+    line-height: 30px;
+}
+.header .left i a{
+    color: white;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: 200; 
+}
+.header .right i{
+    float: right;
+    padding: 0 10px;
+    line-height: 30px;
+}
+.bannar{
+    width: 100%;
+    background-image: url(../image/bannar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-overlay{
+    padding: 110px 15%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.bannar .banner-overlay h1{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+.bannar .banner-overlay p{
+    text-transform: uppercase;
+    padding-top: 10px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+.cform{
+    padding: 100px 0;
+}
+.cform .form_container{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+} 
+.cform .form_left h1{
+    font-weight: 700;
+}
+.cform .form_left p{
+    padding: 10px 0 20px;
+    font-weight: 300;
+    font-size: 19px;
+
+}
+.cform .form_left form input {
+    border: 1px solid lightgrey;
+    outline: none;
+    width: 85%;
+    padding: 10px 1%;
+    margin-bottom: 25px;
+    font-family: "Inconsolata", monospace;
+}
+.cform .form_left form textarea {
+    border: 1px solid lightgrey;
+    outline: none;
+    width: 85%;
+    padding: 10px 1%;
+    margin-bottom: 25px;
+    font-family: "Inconsolata", monospace;
+}
+.cform .form_left form button {
+    background: #242f51;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    font-size: 20px;
+    border: none;
+    font-family: "Inconsolata", monospace;
+}
+.cform .form_left form button:hover {
+    background: #445997;
+    color: #bbb;
+}
+.cform .form_right h1{
+    margin-bottom: 20px;
+    font-weight: 700;
+} 
+.cform .form_right ul li i{
+    display: inline-flex;
+    margin: 10px 0;
+    color: #445997;
+    
+}
+.cform .form_right ul li i h4{
+    padding: 0 10px;
+    font-size: 20px;
+    font-family: "Inconsolata", monospace;
+}
+.cform .form_right ul li i p{
+    font-family: "Inconsolata", monospace;
+    font-size: 20px;
+    color: black;
+}
+.cform .form_right ul li i a{
+    font-family: "Inconsolata", monospace;
+    font-size: 20px;
+    color: black;   
+}
+
+.phone_part{
+    background-color: #242f51;
+    color: white;
+    padding: 70px 15%;
+    text-align: center;
+}
+.phone_part ul{
+    display: inline-flex;
+}
+.phone_part ul li p{
+    font-size: 28px;
+}
+.phone_part ul li h3{
+    font-size: 28px;
+    margin-left: 10px;
+}
+.logo{
+    padding: 50px 0;
+}
+.logo .logo_area{
+    width: 400px;
+    margin: 0 auto;
+}
+.logo .logo_area img{
+    width: 400px;
+    height: 200px;
+}
+.logo .logo_area .logo_icon{
+    text-align: center;
+}
+.logo .logo_area .logo_icon i{
+    padding: 15px;
+    border: 2px solid rgb(168, 164, 164);
+    border-radius: 50%;
+    color: rgb(168, 164, 164);
+}
+.logo .logo_area .logo_icon i:nth-child(2n){
+    margin: 0 20px;
+}
+.copyright{
+    text-align: center;
+    padding: 20px 0;
+    background-color: black;
+    color: white;
+}
+.copyright p{
+    font-size: 20px;
+}
+.navbar .container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 90px;
+    justify-content: center;
+    align-items: center;
+}
+.navbar .menu_area ul{
+    display: inline-flex;
+}
+.navbar .menu_area ul li{
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+}
+.navbar .menu_area ul li a{
+    display: block;
+    color: #242f51;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+}
+.navbar .menu_area ul li:hover a{
+    background-color: #242f51;
+    color: white;
+    
+}
+.navbar .menu_area ul li .dropdown{
+    display: none;
+}
+.navbar .menu_area ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    top:50px;
+    left: 0;
+}
+.navbar .menu_area ul li:hover .dropdown :hover{
+    background-color: white;
+    color: #242f51;
+}
+.navbar .menu_area ul li:hover .dropdown ul{
+    display: block;
+}
+.navbar .menu_area ul li .dropdown li .sub_menu{
+    display: none;
+}
+.navbar .menu_area ul li .dropdown li:hover .sub_menu{
+    display: block;
+    position: absolute;
+    left: 150px;
+    top:0;
+}
+
+
+
+
+
+
+
+
+
+
+
